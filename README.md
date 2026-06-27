@@ -115,9 +115,13 @@ pytest
 - 提问接口返回回答，并包含 `sources` 引用片段。
 - Ollama 未启动或模型未拉取时返回 `503`。
 
-## 简历描述
+## 认证方式
 
-AI 知识库后端系统：基于 FastAPI、PostgreSQL、pgvector 和 Ollama 实现个人知识库问答系统，支持 JWT 登录认证、用户数据隔离、TXT/MD/PDF 文档上传、文本切分、向量化入库、相似度检索和 RAG 问答；使用 Docker Compose 编排 API、数据库和本地大模型服务，并编写 README、接口说明和数据库表设计文档。
+登录成功后复制 `access_token`，在 Swagger 右上角 `Authorize` 中填入：
+
+```text
+Bearer <access_token>
+```
 
 ## 常见问题排查
 
